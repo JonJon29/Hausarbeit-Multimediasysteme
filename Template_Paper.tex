@@ -21,6 +21,9 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper]{article}
+
+\bibliographystyle{alpha}
+
 \usepackage[a4paper,margin=2.5cm]{geometry}
 
 \usepackage{blindtext} % Package to generate dummy text throughout this template 
@@ -69,23 +72,17 @@
 
 \pretitle{\begin{center}\Huge\bfseries} % Article title formatting
 \posttitle{\end{center}} % Article title closing formatting
-\title{Exposé: vorläufiger Titel der Hausarbeit} % Article title
+\title{Exposé: Bemerkbarkeit von Synchonisationsproblemen von Video und Audio} % Article title
 
 \author{%
-\large Erster Autor \\ % Your name
-\normalsize \href{mailto:erster.autor@informatik.hs-fulda.de}{erster.autor@informatik.hs-fulda.de}
+\large Eron Murseli \\ % Your name
+\normalsize \href{mailto:eron.murseli1@informatik.hs-fulda.de}{eron.murseli1@informatik.hs-fulda.de}
 \and
-\large Zweiter Autor \\ % Name des zweiten Autors
-\normalsize \href{mailto:zweiter.autor@informatik.hs-fulda.de}{zweiter.autor@informatik.hs-fulda.de}
+\large Jonas Möller \\ % Name des zweiten Autors
+\normalsize \href{mailto:jonas-sven.moeller@informatik.hs-fulda.de}{jonas-sven.moeller@informatik.hs-fulda.de}
 }
 \date{\today} % Leave empty to omit a date
-\renewcommand{\maketitlehookd}{%
-\begin{abstract}
-\noindent Kann für das Exposé noch leer bleiben.
-% Knappe Zusammenfassung des Vorhabens (Thema, Ziel, Methode, erwarteter Beitrag).
-% Tipp: erst am Ende schreiben.
-\end{abstract}
-}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -103,9 +100,17 @@
 % Relevanz des Themas (wissenschaftlich, gesellschaftlich, praktisch).
 % Klare Abgrenzung: Was gehört dazu, was nicht?
 
-\section{Forschungsfrage(n) und Zielsetzung}
+Filme bestehen sowohl aus Videomaterial als auch aus der dazugehörigen Audiospur.
+Diese müssen für ein gutes Erlebnis synchronisiert sein.
+Um abwägen zu können wie hoch die Toleranz dieser Diskrepanz sein darf, wollen wir herausfinden, wie bemerkbar Asychronität von Audio und Video ist.
+
+\section{Forschungsfragen und Zielsetzung}
 % Formuliere eine präzise, überprüfbare Forschungsfrage (oder 1–3 Teilfragen).
 % Beschreibe die Zielsetzung (welche Erkenntnisse werden angestrebt?) und den erwarteten Neuheits- bzw. Mehrwert.
+
+Wie hoch kann die Verzögerung zwischen Audio und Video bei einem Film sein, bis es von Konsumenten bemerkt wird?
+Macht es einen Unterschied, ob die Audiospur zurückhängt, oder vorausläuft?
+Ist die Bemerkbarkeit abhängig von dem Inhalt des Videos?
 
 \section{Theoretischer Rahmen und Forschungsstand}
 % ggf. Zentrale Begriffe und Theorien definieren.
@@ -114,14 +119,33 @@
 % Forschungslücken benennen, die das Vorhaben adressiert.
 % Füge hier nur einschlägige, bereits gesichtete Quellen ein.
 % Beispiele: \cite{henning2007taschenbuch}, \cite{CiteDrive2022}.
-Es müssen mindetsens drei wissenschaftliche Quellen zitiert werden, die Ihr gelesen habt und die zum thema passen, z.B.:
-\cite{henning2007taschenbuch}
+% Es müssen mindestens drei wissenschaftliche Quellen zitiert werden, die Ihr gelesen habt und die zum Thema passen, z
+%.B.:
+
+% @TODO Forschungsstand fertigstellen
+
+In einem Forschungsartikel von Kohlrausch, Armin and van de Par und Steven wurde bereits festgestellt, dass es
+merkbarer ist, wenn die Audiospur dem Video vorausläuft. \cite{kohlrausch2000experimente}
+
+% @TODO Papers berücksichtigen
+\cite{grant2003discrimination}
+
+\cite{lutzky2004guideline}
 
 \section{Methodik und Daten}
 % Gewählte Methode(n) begründen (z.B. Experiment, Befragung, Inhaltsanalyse, Leitfadeninterview).
 % Untersuchungsdesign (Stichprobe, Rekrutierung, Materialien/Instrumente, Ablauf).
 % Geplante Auswertung (qualitativ/quantitativ, Verfahren, Software).
 % Qualitätssicherung (Validität/Reliabilität/Objektivität), Limitationen.
+
+Die Daten sollen anhand von Befragungen erhoben werden.
+Dabei werden den Probanden Videos mit Audio in unterschiedlichen Verzögerungen gezeigt.
+Anschließend sollen diese angeben, ob es sich synchron angefühlt hat oder nicht.
+
+Die Auswertung soll dann eine Tabelle sein, welche Zeigt ab welcher Verzögerung eine Asynchronität bemerkt wurde.
+Diese soll nach Inhalt des Videos und nach positiver und negativer Verzögerung gegliedert werden.
+
+% @TODO Qualitätssicherung festlegen
 
 \section{Vorläufige Gliederung der Arbeit}
 % Beispielhafte Struktur (anpassen oder detaillieren):
@@ -139,6 +163,9 @@ Es müssen mindetsens drei wissenschaftliche Quellen zitiert werden, die Ihr gel
 % kurze Beschreibung der Gruppenarbeit (z.B. Aufgabenverteilung, Kommunikation).
 % Nur Bestandteil des Exposés: Für Abgabe der Hausarbeit nicht relevant.
 
+Wir werden versuchen die Ausarbeitung gemeinsam zu verfassen.
+Eine thematische Arbeitsteilung ist also nicht vorgesehen.
+Die Zusammenarbeit soll über ein wöchentliches Treffen, vorzugsweise in Präsenz, stattfinden.
 
 %----------------------------------------------------------------------------------------
 %	Appendix
@@ -151,7 +178,7 @@ Es müssen mindetsens drei wissenschaftliche Quellen zitiert werden, die Ihr gel
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
-\bibliographystyle{alpha}
+% \bibliographystyle{alpha}
 \bibliography{literatur}
 
 \end{document}
